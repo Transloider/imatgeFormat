@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div class="text-center m-4">
+      <a href="./imatge1.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 1</a>
+      <a href="./imatge2.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 2</a>
+      <a href="./imatge3.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 3</a>
+      <a href="./imatge4.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 4</a>
+      <a href="./tasca1.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Tasca 1: WebP</a>
+      <a href="./tasca2.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Tasca 2: AVIF</a>
+      <a href="./tasca3.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Tasca 3: Lighthouse</a>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <img src="images/logotipWomens.png" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/imagenPradoArboles.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/postaDeSol.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img src="images/imatgeGradient.png" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+      <div class="flex justify-center mb-3">
+        <div class="w-2/3 p-3 border rounded">
+        <h1><strong>LOGOTIP</strong></h1>
+        <p>Pel cas d’un logotip, el format d’imatge que resultaria més bo seria el PNG, ja  que aquest no comprimeix amb pèrdua, també et permet transparència, cosa que el JPG no et permet fer, i en el cas de GIF, si gaire varietat de colors no serà tan potent, ja que disposa de menys colors. </p>
+        <br>
+        <p>En el cas que es faci amb PNG sí que es podria reduir més la mida, però s’hauria de tenir en compte que si es redueix molt aquesta perdrà qualitat. En el cas que féssim un format vectorial tipus SVG, ens permetria no perdre qualitat a l’hora de reduir la mida, però he entès que la pregunta anava referent els formats que hem treballat al llarg d’aquesta pràctica.</p>
+        <br>
+        <h1><strong>FOTOGRAFIA I PAISATGE</strong></h1>
+        <p>Per aquests tipus d’imatge considero que poder el format que seria més òptim, seria el JPG, ja que permet reduir considerablement la mida del fitxer sense una gran pèrdua de qualitat i també disposa d’un suport universal pels navegadors. En el cas que fos algun altre tema d'imatges, per exemple que tinguin una transparència, aquest format ja no seria l’indicat, ja que no en permet, però en el cas de paisatges o fotografies és molt bo</p>
+        <br>
+        <p>Referent el que he pogut anar experimentant, en el cas del JPG a partir del 70% cap a baix ja es comença a apreciar bastant la pèrdua de qualitat de la imatge. </p>
+        <br>
+        <p>A partir de 70% se seguiria veient bastant bé, però clarament es veuria una pèrdua de qualitat.</p>
+        <br>
+        <p>En el cas que vulguem desar la imatge diverses vegades en JPG, cada cop aquesta anirà perdent més qualitat, ja que la segona ja tindria falles i si guardes a partir de la segona ja els estaries acumulant de cara la tercera.</p>
+        <br>
+        <h1><strong>IMATGE TRANSPARÈNCIA</strong></h1>
+        <p>El format més òptim seria el PNG, ja que aquest té una transparència total respecte al canal alfa i també perquè es tracta d’un format sense pèrdua, per tant, la qualitat d’aquesta no es veurà afectada.</p>
+        <br>
+        <p>El problema si ho passem a JPG, és que aquest no suporta transparència, fet que causarà que la part de transparència es transformi en color blanc o bé negre.</p>
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

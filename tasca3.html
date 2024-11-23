@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div class="text-center m-4">
+      <a href="./index.html" class="p-3 bg-blue-500 mx-3 text-white rounded">ÍNDEX</a>
+      <a href="./imatge1.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 1</a>
+      <a href="./imatge2.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 2</a>
+      <a href="./imatge3.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 3</a>
+      <a href="./imatge4.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Imatge 4</a>
+      <a href="./tasca1.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Tasca 1: WebP</a>
+      <a href="./tasca2.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Tasca 2: AVIF</a>
+      <a href="./tasca3.html" class="p-3 bg-blue-500 mx-3 text-white rounded">Tasca 3: Lighthouse</a>
+    </div>
+    <div class="flex justify-center flex-col mb-3 mx-24 space-y-4">
+      <img src="./imageLight/DiagnosticRendimentMenuInici.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+      <div class="w-auto p-3 my-6 border rounded ">
+        <h1 class="text-xl"><strong>Rultats %</strong></h1>
+        <p><strong>Rendiment:</strong> En el nostre cas, el problema que hem tingut principalment ha set la renderització, però analitzant el gràfic l'element que més renderització ens ha ocupat ha sigut el text.</p>
+        <div class="mx-4 my-2">
+            <img src="./imageLight/imatgeMaxRender.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <p>També m'ha marcat respecte a l'actualització dels formats de les imatges a última generació, ja que l'actual està en png. I segurament si adaptem els formats a WebP o AVIF, ens facilitarà la compressió i en baixarà el seu consum</p>
+        <div class="mx-4 my-2 ">
+            <img src="./imageLight/imatgeUpdateFormat.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <p>En aquest cas simplement m'indica que les imatges haurien de tenir una mida en concret en coptes d'un bg-cover, considero que la manera en la qual he fet ja és la òptima, ja que el cover en aquest cas es essencial per poder-la fer responsive.</p>
+        <div class="mx-4 my-2 ">
+            <img src="./imageLight/imatgeCoverImg.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <p>En aquest cas m'informa que primer m'hauria de carregar el text mentre es mentre es carreguen les fonts, fet que em podria agilitzar els temps de càrrega i l'usuari no s'hauria d'esperar per poder llegir el text.</p>
+        <div class="mx-4 my-2 ">
+            <img src="./imageLight/imatgeFontText.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <p>En el nostre cas si l'usuari inicia per mòbil, el logo està hiddent, però en el cas que ingressi per ordinador si que necessitaria que tingues el logo a l'instant, per tant considero que en aquest cas per poder realitzar el que ens diu hauria de fer servir un mediaquery per poder fer que en el cas que sigui la mida sm retardar la càrrega del logo.</p>
+        <div class="mx-4 my-2 mb-10 ">
+            <img src="./imageLight/imatgeHidden.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <p><strong>Accessibilitat:</strong> En el meu cas l'accessibilitat és mol bona i no em dona cap possible millora que l'hi podria realitzar, el que sí que em dona són elements addicionals per comporvar manualmen que són els que mostro a continuació</p>
+        <div class=" flex flex-col my-2">
+            <div class="flex my-2 gap-5">
+                <div>
+                    <img src="./imageLight/imatgeAccessibilitat.png" alt="Imatge Menu Inicial" class="max-w-auto h-auto rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <img src="./imageLight/imatgeComprovacionsAddicionals.png" alt="Imatge Menu Inicial" class="max-w-auto h-auto rounded-lg shadow-lg">
+                </div>               
+            </div>
+        </div>
+        <p><strong>Pràctiques Recomenades: </strong>Respecte les pràctiques també m'ha comentat que estàn molt bé i no em mostra cap possible correcció</p>
+        <div class="mx-4 my-2 mb-10">
+            <img src="./imageLight/imatgePractiquesRecomenades.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <p><strong>SEO: </strong>En el cas del SEO m'ha donat informat que faltarien matadescripcions per a poder definir millor el contingut de la pàgina, però considero que justament la nostre pàgina no es buscava una gran personalització de els metadades</p>
+        <div class="mx-4 my-2 mb-10">
+            <img src="./imageLight/imatgeSEO.png" alt="Imatge Menu Inicial" class="max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+    </div>
+      <!-- <div class="w-auto p-3 border rounded">
+        <h1 class="text-xl"><strong>Menu Inici</strong></h1>
+        <p><strong>Rendiment:</strong> aquest cas el webp també et permet animació, i si mirem el pes de l'imatge, es redueix considerablement sense pèrdua de qualitat.</p>
+      </div> -->
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
